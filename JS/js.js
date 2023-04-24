@@ -11,15 +11,13 @@ $(document).ready(function() {
             return false;
         } 
 
-        var regexCode = /^BN-(\d{3})$/;
+        var regexCode = /^BN-(\d{5})$/;
         if(!regexCode.test($('#maBN').val())) {
-            message = 'Mã bệnh nhân có định dạng BN-YYY';
+            message = 'Mã bệnh nhân có định dạng BN-YYYYY';
             formMessage.show();
             formMessage.text(message);
             return false;
         }
-
-        formMessage.hide();
         formMessage.text(message);
         return true;
     }
@@ -35,18 +33,13 @@ $(document).ready(function() {
         } 
 
         if($('#password').val().length < 6) {
-            message = 'Mật khẩu chứa từ 6 ký tự bất kỳ trở lên';
+            message = 'Mật khẩu phair từ 6 ký tự trở lên';
             formMessage.show();
             formMessage.text(message);
             return false;
         }
-
-        formMessage.hide();
         formMessage.text(message);
         return true;
-    }
-
-    $('#password').blur(Password);
-    $('#patientCode').blur(maVN);    
+    } 
 
 });

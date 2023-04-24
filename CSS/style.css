@@ -2,15 +2,19 @@
     width: 100%;
 }
 .GD_Home{
-    padding: 20px 10px;
+    padding: 20px;
     background-color:aqua;
     margin: 0px;
     border-radius: 0px;
     list-style: none;
 }
-.GD_Home>.active {
+.GD_Home .active {
     color: aqua;
 }
 .thongbao {
     color: red;
+}
+.sinhvien{
+    text-align: center;
+    padding: 50px;
 }
